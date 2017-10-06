@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - mpesa@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="mpesa">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="assignment_submissions"/>
+    <schema id="3" name="db_example"/>
+    <schema id="4" name="dyna101"/>
+    <schema id="5" name="information_schema"/>
+    <schema id="6" name="myApp"/>
+    <schema id="7" name="mysql"/>
+    <schema id="8" name="performance_schema"/>
+    <schema id="9" name="secure_login"/>
+    <schema id="10" name="sys"/>
+    <schema id="11" name="vReporting101"/>
+    <table id="12" parent="1" name="account_details"/>
+    <column id="13" parent="12" name="account_ID">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="14" parent="12" name="branch">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="15" parent="12" name="account_number">
+      <mandatory>1</mandatory>
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="16" parent="12" name="phone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(22)|0</data-type>
+    </column>
+    <key id="17" parent="12" name="PRIMARY">
+      <columns>account_ID</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
