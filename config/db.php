@@ -10,9 +10,9 @@
 
 //DB details
 $dbHost = 'localhost';
-$dbUsername = 'root';
-$dbPassword = '733securex';
-$dbName = 'mpesa';
+$dbUsername = '';
+$dbPassword = '';
+$dbName = '';
 
 //Create connection and select DB
 $conn = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
